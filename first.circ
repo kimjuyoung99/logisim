@@ -76,17 +76,15 @@
     <comp lib="4" loc="(250,200)" name="D Flip-Flop"/>
     <comp lib="4" loc="(250,250)" name="D Flip-Flop"/>
     <comp lib="4" loc="(250,300)" name="D Flip-Flop"/>
-    <!-- 555 Timer -->
-    <comp lib="4" loc="(350,250)" name="555 Timer"/>
     <!-- Comparator -->
     <comp lib="3" loc="(450,250)" name="Comparator"/>
     <!-- AND Gate -->
     <comp lib="1" loc="(550,200)" name="AND Gate"/>
     <comp lib="1" loc="(550,300)" name="AND Gate"/>
     <!-- U/D Counter -->
-    <comp lib="4" loc="(650,250)" name="Counter"/>
-    <!-- BCD to 7-Segment Decoder -->
-    <comp lib="3" loc="(750,250)" name="BCD to 7-Segment Decoder"/>
+    <comp lib="3" loc="(650,250)" name="Counter"/>
+    <!-- Decoder -->
+    <comp lib="2" loc="(750,250)" name="Decoder"/>
     <!-- 7-Segment Display -->
     <comp lib="5" loc="(850,250)" name="7-Segment Display"/>
     <!-- LED Indicators -->
@@ -122,9 +120,9 @@
     <!-- Connect AND Gates to Counter -->
     <wire from="(600,200)" to="(650,200)"/>
     <wire from="(600,300)" to="(650,300)"/>
-    <!-- Connect Counter to BCD to 7-Segment Decoder -->
+    <!-- Connect Counter to Decoder -->
     <wire from="(700,250)" to="(750,250)"/>
-    <!-- Connect BCD to 7-Segment Decoder to Display -->
+    <!-- Connect Decoder to 7-Segment Display -->
     <wire from="(800,250)" to="(850,250)"/>
     <!-- Connect Counter to LEDs -->
     <wire from="(700,100)" to="(950,100)"/>
